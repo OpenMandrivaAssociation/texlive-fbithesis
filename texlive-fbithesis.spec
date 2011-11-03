@@ -1,3 +1,9 @@
+# revision 21340
+# category Package
+# catalog-ctan /macros/latex/contrib/fbithesis
+# catalog-date 2011-02-07 09:47:54 +0100
+# catalog-license other-free
+# catalog-version 1.2m
 Name:		texlive-fbithesis
 Version:	1.2m
 Release:	1
@@ -54,6 +60,7 @@ pages.
 %doc %{_texmfdistdir}/source/latex/fbithesis/fbithesis.drv
 %doc %{_texmfdistdir}/source/latex/fbithesis/fbithesis.dtx
 %doc %{_texmfdistdir}/source/latex/fbithesis/fbithesis.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +71,5 @@ pages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
