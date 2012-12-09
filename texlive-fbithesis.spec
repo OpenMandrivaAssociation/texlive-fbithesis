@@ -60,3 +60,17 @@ pages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2m-2
++ Revision: 751794
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2m-1
++ Revision: 718421
+- texlive-fbithesis
+- texlive-fbithesis
+- texlive-fbithesis
+- texlive-fbithesis
+
