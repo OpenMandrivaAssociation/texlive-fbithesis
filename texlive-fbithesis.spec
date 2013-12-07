@@ -6,7 +6,7 @@
 # catalog-version 1.2m
 Name:		texlive-fbithesis
 Version:	1.2m
-Release:	4
+Release:	5
 Summary:	Computer Science thesis class for University of Dortmund
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fbithesis
