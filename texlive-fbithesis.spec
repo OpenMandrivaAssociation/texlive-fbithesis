@@ -1,19 +1,13 @@
-# revision 21340
-# category Package
-# catalog-ctan /macros/latex/contrib/fbithesis
-# catalog-date 2011-02-07 09:47:54 +0100
-# catalog-license other-free
-# catalog-version 1.2m
 Name:		texlive-fbithesis
-Version:	1.2m
-Release:	11
+Version:	21340
+Release:	1
 Summary:	Computer Science thesis class for University of Dortmund
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fbithesis
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ command to typeset a title page that is adjusted to these cover
 pages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,24 +47,11 @@ pages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2m-2
-+ Revision: 751794
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2m-1
-+ Revision: 718421
-- texlive-fbithesis
-- texlive-fbithesis
-- texlive-fbithesis
-- texlive-fbithesis
-
