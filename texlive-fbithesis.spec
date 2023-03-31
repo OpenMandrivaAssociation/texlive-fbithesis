@@ -1,6 +1,6 @@
 Name:		texlive-fbithesis
 Version:	21340
-Release:	1
+Release:	2
 Summary:	Computer Science thesis class for University of Dortmund
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fbithesis
