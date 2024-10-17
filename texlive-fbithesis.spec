@@ -3,7 +3,7 @@ Version:	21340
 Release:	2
 Summary:	Computer Science thesis class for University of Dortmund
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fbithesis
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/fbithesis
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fbithesis.doc.r%{version}.tar.xz
